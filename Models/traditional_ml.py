@@ -35,7 +35,7 @@ for model in models:
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
     accuracy.append(model.score(X_test, y_test))
-    name.append(str(model))
+    name.append(model)
 
 #create a dictionary
 dictionary = dict(zip(name, accuracy))
